@@ -1,3 +1,23 @@
-body{
-    background-color: rgb(179, 29, 179);
-}
+// $fuente_principal:"Monserrat", sans-serif;   //Nombrar variables en SASS
+//@use 'variables' as *;  // asi evitas poner el namespace antes de la variable
+
+// @use 'base/variables' as v;
+// @use 'base/normalize';  //@use no nos dara codigo duplicado
+//@forward // no utiliza el name space
+
+//Usar use cuando se quiera acceder a una variable en especifico
+//usar forward cuando querramos traer todo el contenido de una hoja de estilos
+
+
+@forward 'base';
+
+// body {
+//     font-family: v.$fuente_principal;
+//     font-optical-sizing: auto;
+//     font-style: normal;
+//     color: v.$negro;
+
+// }
+
+
+

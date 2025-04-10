@@ -12,19 +12,18 @@ import gulpSass from 'gulp-sass'
 
 const sass = gulpSass(dartSass);
 
-export function css(donde) {
+export function css(done) {
     
     src('src/scss/app.scss')
-        .pipe(sass())
+        .pipe(sass().on('error',sass.logError))
         .pipe(dest('build/css'))
 
 
-    donde()
+    done()
 }
 
-export function dev() {
-    watch("src/scss/app.scss", css)
-    watch()
+export function dev() {//va estar observando el archivo y cuando alla cambios ejecuta el archivo css
+    watch("src/scss/**/*.scss", css)    //Va ir buscando todos los que tenga este patron
 }
 
 

@@ -1,0 +1,22 @@
+***Agregar normalize
+Antes de iniciar un proyecto elegir como se van amostrar en mi html
+
+https://necolas.github.io/normalize.css/8.0.1/normalize.css
+
+
+
+*****Subir cambios a git
+
+git status
+git add .
+git status
+
+git commit -m "Mensaje del commit"	Deja listo los cambios
+git push				Manda cambios al repositorio
+
+
+
+
+
+
+
