@@ -374,6 +374,13 @@ body > section {
 .header {
   background-color: #4CB8B3;
 }
+@media (min-width: 768px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
+}
 .header .contenido-header {
   padding: 2rem;
   display: flex;
@@ -395,6 +402,7 @@ body > section {
 }
 .navegacion-principal a:hover {
   color: #fdda00;
+<<<<<<< HEAD
 }
 
 .header-contenedor {
@@ -407,4 +415,6 @@ body > section {
   width: 95%;
   max-width: 120rem;
   margin: 0 auto;
+=======
+>>>>>>> 846530928f7251a0c579d363856cc6792fa75fb9
 }
